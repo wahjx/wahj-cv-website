@@ -17,7 +17,6 @@ https://wahjx.github.io/wahj-cv-website/
 - HTML
 - CSS
 - JavaScript
-- GitHub Pages
 
 ## 👤 Author
 **Wahj Yousif Alzaabe**
