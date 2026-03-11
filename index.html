@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,15 +14,24 @@
   <nav class="nav">
     <div class="container nav-wrap">
       <div class="brand">WAHJ CV</div>
+
       <div class="nav-links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#project">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-en="About" data-ar="عني">About</a>
+        <a href="#education" data-en="Education" data-ar="التعليم">Education</a>
+        <a href="#skills" data-en="Skills" data-ar="المهارات">Skills</a>
+        <a href="#techstack" data-en="Tech Stack" data-ar="التقنيات">Tech Stack</a>
+        <a href="#project" data-en="Projects" data-ar="المشاريع">Projects</a>
+        <a href="#certificates" data-en="Certificates" data-ar="الشهادات">Certificates</a>
+        <a href="#learning" data-en="Learning" data-ar="أتعلمه الآن">Learning</a>
+        <a href="#github-stats" data-en="GitHub" data-ar="جيت هب">GitHub</a>
+        <a href="#contact" data-en="Contact" data-ar="التواصل">Contact</a>
       </div>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+
+      <div class="nav-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Toggle language">AR</button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      </div>
     </div>
   </nav>
 
@@ -30,19 +39,22 @@
     <section class="hero container" id="top">
       <div class="hero-grid">
         <div class="hero-card glass reveal show">
-          <div class="eyebrow">Network Engineer</div>
+          <div class="eyebrow" data-en="Network Engineer" data-ar="مهندسة شبكات">Network Engineer</div>
           <h1><span class="gradient">Wahj Yousif</span><br />Alzaabe</h1>
-          <p class="lead">
-            Computer Networks and Communications graduate, registered as an Engineer in Saudi Arabia,
-            with a strong interest in networking technologies, system analysis, and cybersecurity.
-            Passionate about applying academic knowledge in practical environments, continuous learning,
-            and contributing to innovative technical teams.
+
+          <p
+            class="lead"
+            data-en="Computer Networks and Communications graduate, registered as an Engineer in Saudi Arabia, with a strong interest in networking technologies, system analysis, cybersecurity, and web development. Passionate about applying academic knowledge in practical environments, continuous learning, and contributing to innovative technical teams."
+            data-ar="خريجة شبكات الحاسب والاتصالات ومسجلة كمهندسة في السعودية، لدي اهتمام قوي بتقنيات الشبكات وتحليل الأنظمة والأمن السيبراني وتطوير الويب. أسعى لتطبيق المعرفة الأكاديمية في بيئات عملية والاستمرار في التعلم والمساهمة في فرق تقنية مبتكرة."
+          >
+            Computer Networks and Communications graduate, registered as an Engineer in Saudi Arabia, with a strong interest in networking technologies, system analysis, cybersecurity, and web development. Passionate about applying academic knowledge in practical environments, continuous learning, and contributing to innovative technical teams.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="mailto:wahjyousif@gmail.com">Email Me</a>
-            <a class="btn btn-secondary" href="#contact">View Contact</a>
-            <a class="btn btn-secondary" href="#project">See My Projects</a>
+            <a class="btn btn-primary" href="mailto:wahjyousif@gmail.com" data-en="Email Me" data-ar="راسليني">Email Me</a>
+            <a class="btn btn-secondary" href="#contact" data-en="View Contact" data-ar="عرض التواصل">View Contact</a>
+            <a class="btn btn-secondary" href="#project" data-en="See My Projects" data-ar="عرض مشاريعي">See My Projects</a>
+            <a class="btn btn-secondary" href="cv.pdf" download data-en="Download CV" data-ar="تحميل السيرة">Download CV</a>
           </div>
         </div>
 
@@ -53,20 +65,23 @@
 
           <div class="info-list">
             <div class="info-item">
-              <span>Specialization</span>
-              <strong>Computer Networks and Communications</strong>
+              <span data-en="Specialization" data-ar="التخصص">Specialization</span>
+              <strong data-en="Computer Networks and Communications" data-ar="شبكات الحاسب والاتصالات">Computer Networks and Communications</strong>
             </div>
+
             <div class="info-item">
-              <span>University</span>
+              <span data-en="University" data-ar="الجامعة">University</span>
               <strong>King Faisal University</strong>
             </div>
+
             <div class="info-item">
-              <span>Current GPA</span>
+              <span data-en="Current GPA" data-ar="المعدل الحالي">Current GPA</span>
               <strong>4.03</strong>
             </div>
+
             <div class="info-item">
-              <span>Current Goal</span>
-              <strong>CCNA Certification Program with King Faisal University</strong>
+              <span data-en="Current Goal" data-ar="الهدف الحالي">Current Goal</span>
+              <strong data-en="CCNA Certification Program with King Faisal University" data-ar="الاستعداد لشهادة CCNA مع جامعة الملك فيصل">CCNA Certification Program with King Faisal University</strong>
             </div>
           </div>
         </aside>
@@ -76,36 +91,41 @@
     <section class="page-section container reveal" id="about">
       <div class="section-head">
         <div>
-          <h2>About Me</h2>
-          <p>A modern CV website presenting my background, learning journey, and technical strengths in an engaging way.</p>
+          <h2 data-en="About Me" data-ar="عني">About Me</h2>
+          <p
+            data-en="A modern CV website presenting my background, learning journey, and technical strengths in an engaging way."
+            data-ar="موقع سيرة ذاتية عصري يعرض خلفيتي ورحلتي التعليمية ونقاط قوتي التقنية بطريقة جذابة."
+          >
+            A modern CV website presenting my background, learning journey, and technical strengths in an engaging way.
+          </p>
         </div>
       </div>
 
       <div class="grid grid-2">
         <div class="card">
-          <h3>Professional Summary</h3>
-          <p>
-            Computer Networks and Communications graduate, registered as an Engineer in Saudi Arabia,
-            with a strong interest in networking technologies and system analysis. Motivated, adaptable,
-            and eager to grow professionally within the engineering field while contributing to modern
-            technical teams.
+          <h3 data-en="Professional Summary" data-ar="الملخص المهني">Professional Summary</h3>
+          <p
+            data-en="Computer Networks and Communications graduate, registered as an Engineer in Saudi Arabia, with strong interest in networking technologies, system analysis, cybersecurity, and web development. Motivated, adaptable, and eager to grow professionally while contributing to modern technical teams."
+            data-ar="خريجة شبكات الحاسب والاتصالات ومسجلة كمهندسة في السعودية، لدي اهتمام قوي بتقنيات الشبكات وتحليل الأنظمة والأمن السيبراني وتطوير الويب. أتميز بالحافز والمرونة والرغبة في التطور المهني والمساهمة في فرق تقنية حديثة."
+          >
+            Computer Networks and Communications graduate, registered as an Engineer in Saudi Arabia, with strong interest in networking technologies, system analysis, cybersecurity, and web development. Motivated, adaptable, and eager to grow professionally while contributing to modern technical teams.
           </p>
         </div>
 
         <div class="card">
-          <h3>Highlights</h3>
+          <h3 data-en="Highlights" data-ar="أبرز النقاط">Highlights</h3>
           <div class="stats">
             <div class="stat">
               <strong>4.03</strong>
-              <span>Current GPA</span>
+              <span data-en="Current GPA" data-ar="المعدل الحالي">Current GPA</span>
             </div>
             <div class="stat">
               <strong>1443</strong>
-              <span>Training Hours</span>
+              <span data-en="Training Hours" data-ar="ساعات التدريب">Training Hours</span>
             </div>
             <div class="stat">
-              <strong>15+</strong>
-              <span>Core Skills</span>
+              <strong>20+</strong>
+              <span data-en="Core Skills" data-ar="مهارات أساسية">Core Skills</span>
             </div>
           </div>
         </div>
@@ -115,29 +135,40 @@
     <section class="page-section container reveal" id="education">
       <div class="section-head">
         <div>
-          <h2>Education & Training</h2>
-          <p>My academic foundation and hands-on technical learning path.</p>
+          <h2 data-en="Education & Training" data-ar="التعليم والتدريب">Education & Training</h2>
+          <p
+            data-en="My academic foundation and hands-on technical learning path."
+            data-ar="أساسي الأكاديمي ومسار التعلم التقني العملي الخاص بي."
+          >
+            My academic foundation and hands-on technical learning path.
+          </p>
         </div>
       </div>
 
       <div class="grid grid-2">
         <div class="card">
-          <h3>Education</h3>
+          <h3 data-en="Education" data-ar="التعليم">Education</h3>
           <div class="timeline">
             <div class="timeline-item">
               <strong>King Faisal University</strong>
-              <p>Bachelor’s Degree in Computer Networks and Communications</p>
+              <p data-en="Bachelor’s Degree in Computer Networks and Communications" data-ar="بكالوريوس في شبكات الحاسب والاتصالات">Bachelor’s Degree in Computer Networks and Communications</p>
             </div>
+
             <div class="timeline-item">
-              <strong>Academic Performance</strong>
-              <p>Graduated with a current GPA of 4.03 and built a strong foundation in networks, communications, and system-oriented technologies.</p>
+              <strong data-en="Academic Performance" data-ar="الأداء الأكاديمي">Academic Performance</strong>
+              <p
+                data-en="Graduated with a current GPA of 4.03 and built a strong foundation in networks, communications, and system-oriented technologies."
+                data-ar="طالبة خريجة بمعدل 4.03 وبنيت أساسًا قويًا في الشبكات والاتصالات والتقنيات الموجهة للأنظمة."
+              >
+                Graduated with a current GPA of 4.03 and built a strong foundation in networks, communications, and system-oriented technologies.
+              </p>
             </div>
           </div>
         </div>
 
         <div class="card">
-          <h3>Professional Training</h3>
-          <p>Completed 1443 hours of training across technical topics including:</p>
+          <h3 data-en="Professional Training" data-ar="التدريب المهني">Professional Training</h3>
+          <p data-en="Completed 1443 hours of training across technical topics including:" data-ar="أكملت 1443 ساعة تدريبية في مواضيع تقنية تشمل:">Completed 1443 hours of training across technical topics including:</p>
           <div class="chips">
             <span class="chip">Java</span>
             <span class="chip">OOP</span>
@@ -163,71 +194,174 @@
     <section class="page-section container reveal" id="skills">
       <div class="section-head">
         <div>
-          <h2>Technical Skills</h2>
-          <p>Core tools and technologies I have worked with across study and practical training.</p>
+          <h2 data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</h2>
+          <p
+            data-en="Core tools and technologies I have worked with across study and practical training."
+            data-ar="الأدوات والتقنيات الأساسية التي عملت عليها خلال الدراسة والتدريب العملي."
+          >
+            Core tools and technologies I have worked with across study and practical training.
+          </p>
         </div>
       </div>
 
-      <div class="card">
-        <div class="chips">
-          <span class="chip">PHP</span>
-          <span class="chip">Java</span>
-          <span class="chip">C++</span>
-          <span class="chip">SQL</span>
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">Python</span>
-          <span class="chip">C#</span>
-          <span class="chip">Kali Linux</span>
-          <span class="chip">SSH</span>
-          <span class="chip">Object-Oriented Programming</span>
-          <span class="chip">Networking Programming</span>
-          <span class="chip">DOM</span>
-          <span class="chip">Cybersecurity</span>
-          <span class="chip">UX/UI</span>
-          <span class="chip">Command Line</span>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 data-en="Networking" data-ar="الشبكات">Networking</h3>
+
+          <div class="skill">
+            <span>Networking Fundamentals</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="90%" style="width: 90%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>Network Troubleshooting</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="85%" style="width: 85%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>Network Diagnostics</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="82%" style="width: 82%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>IT Support</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="84%" style="width: 84%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>Technical Support</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="83%" style="width: 83%"></div></div>
+          </div>
         </div>
+
+        <div class="card">
+          <h3 data-en="Security" data-ar="الأمن">Security</h3>
+
+          <div class="skill">
+            <span>Cybersecurity</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="78%" style="width: 78%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>Network Security</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="80%" style="width: 80%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>Information Security</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="75%" style="width: 75%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>Kali Linux</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="72%" style="width: 72%"></div></div>
+          </div>
+
+          <div class="skill">
+            <span>SSH</span>
+            <div class="skill-bar"><div class="skill-fill" data-width="76%" style="width: 76%"></div></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 data-en="Programming" data-ar="البرمجة">Programming</h3>
+          <div class="chips">
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">C++</span>
+            <span class="chip">C#</span>
+            <span class="chip">PHP</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Object-Oriented Programming</span>
+            <span class="chip">Command Line</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 data-en="Web Development" data-ar="تطوير الويب">Web Development</h3>
+          <div class="chips">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">DOM</span>
+            <span class="chip">UX/UI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section container reveal" id="techstack">
+      <div class="section-head">
+        <div>
+          <h2 data-en="Tech Stack" data-ar="التقنيات">Tech Stack</h2>
+          <p
+            data-en="Technologies and tools I use in networking, security, programming, and web development."
+            data-ar="التقنيات والأدوات التي أستخدمها في الشبكات والأمن والبرمجة وتطوير الويب."
+          >
+            Technologies and tools I use in networking, security, programming, and web development.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-3 tech-grid">
+        <div class="card tech-card"><span class="tech-icon">🐍</span><h3>Python</h3></div>
+        <div class="card tech-card"><span class="tech-icon">🌐</span><h3>HTML</h3></div>
+        <div class="card tech-card"><span class="tech-icon">🎨</span><h3>CSS</h3></div>
+        <div class="card tech-card"><span class="tech-icon">⚡</span><h3>JavaScript</h3></div>
+        <div class="card tech-card"><span class="tech-icon">🗄️</span><h3>SQL</h3></div>
+        <div class="card tech-card"><span class="tech-icon">🧩</span><h3>Java</h3></div>
+        <div class="card tech-card"><span class="tech-icon">💻</span><h3>C++</h3></div>
+        <div class="card tech-card"><span class="tech-icon">🔐</span><h3>Cybersecurity</h3></div>
+        <div class="card tech-card"><span class="tech-icon">📡</span><h3>Networking</h3></div>
       </div>
     </section>
 
     <section class="page-section container reveal" id="project">
       <div class="section-head">
         <div>
-          <h2>Projects</h2>
-          <p>Projects that reflect my practical experience in engineering, automation, and problem solving.</p>
+          <h2 data-en="Projects" data-ar="المشاريع">Projects</h2>
+          <p
+            data-en="Projects that reflect my practical experience in engineering, automation, and problem solving."
+            data-ar="مشاريع تعكس خبرتي العملية في الهندسة والأتمتة وحل المشكلات."
+          >
+            Projects that reflect my practical experience in engineering, automation, and problem solving.
+          </p>
         </div>
       </div>
 
       <div class="grid grid-3">
         <div class="card">
           <h3>Arduino-Based Solar Tracking System</h3>
-          <p>
-            Designed and implemented an Arduino-based solar tracking system utilizing LDR sensors and servo motors
-            to automatically align a solar panel with the light source. The project was initially developed as a single-axis
-            tracker and later enhanced into a dual-axis prototype using a 3D-printed structure to improve tracking accuracy
-            and mechanical stability.
+          <p
+            data-en="Designed and implemented an Arduino-based solar tracking system utilizing LDR sensors and servo motors to automatically align a solar panel with the light source. The project was initially developed as a single-axis tracker and later enhanced into a dual-axis prototype using a 3D-printed structure to improve tracking accuracy and mechanical stability."
+            data-ar="صممت ونفذت نظام تتبع شمسي باستخدام أردوينو وحساسات LDR ومحركات سيرفو لمحاذاة اللوح الشمسي تلقائيًا مع مصدر الضوء. بدأ المشروع كنظام أحادي المحور ثم تم تطويره إلى نموذج ثنائي المحور باستخدام هيكل مطبوع ثلاثي الأبعاد لتحسين الدقة والثبات."
+          >
+            Designed and implemented an Arduino-based solar tracking system utilizing LDR sensors and servo motors to automatically align a solar panel with the light source. The project was initially developed as a single-axis tracker and later enhanced into a dual-axis prototype using a 3D-printed structure to improve tracking accuracy and mechanical stability.
           </p>
-          <p><strong>Focus:</strong> Hardware Integration • Sensors • Engineering Design</p>
+          <p data-en="Focus: Hardware Integration • Sensors • Engineering Design" data-ar="التركيز: تكامل العتاد • الحساسات • التصميم الهندسي"><strong>Focus:</strong> Hardware Integration • Sensors • Engineering Design</p>
         </div>
 
         <div class="card">
           <h3>Log File Analyzer</h3>
-          <p>
-            A Python command-line tool that analyzes log files and counts log levels such as INFO,
-            WARNING, and ERROR. It helps make system activity easier to understand and review.
+          <p
+            data-en="A Python command-line tool that analyzes log files and counts log levels such as INFO, WARNING, and ERROR. It helps make system activity easier to understand and review."
+            data-ar="أداة سطر أوامر بلغة Python لتحليل ملفات السجل وعدّ مستويات الرسائل مثل INFO وWARNING وERROR، مما يسهل فهم نشاط النظام ومراجعته."
+          >
+            A Python command-line tool that analyzes log files and counts log levels such as INFO, WARNING, and ERROR. It helps make system activity easier to understand and review.
           </p>
-          <p><strong>Focus:</strong> Python • File Handling • CLI Tools • Automation</p>
+          <p data-en="Focus: Python • File Handling • CLI Tools • Automation" data-ar="التركيز: بايثون • التعامل مع الملفات • أدوات سطر الأوامر • الأتمتة"><strong>Focus:</strong> Python • File Handling • CLI Tools • Automation</p>
           <p><a href="https://github.com/wahjx/log-file-analyzer" target="_blank" rel="noreferrer">View on GitHub</a></p>
         </div>
 
         <div class="card">
           <h3>File Organizer</h3>
-          <p>
-            A Python script that automatically organizes files into folders based on file type such as
-            images, documents, videos, and audio files, making file management more efficient.
+          <p
+            data-en="A Python script that automatically organizes files into folders based on file type such as images, documents, videos, and audio files, making file management more efficient."
+            data-ar="سكريبت Python ينظم الملفات تلقائيًا داخل مجلدات حسب نوع الملف مثل الصور والمستندات والفيديو والصوتيات، مما يجعل إدارة الملفات أكثر كفاءة."
+          >
+            A Python script that automatically organizes files into folders based on file type such as images, documents, videos, and audio files, making file management more efficient.
           </p>
-          <p><strong>Focus:</strong> Python • Automation • File Management</p>
+          <p data-en="Focus: Python • Automation • File Management" data-ar="التركيز: بايثون • الأتمتة • إدارة الملفات"><strong>Focus:</strong> Python • Automation • File Management</p>
           <p><a href="https://github.com/wahjx/file-organizer" target="_blank" rel="noreferrer">View on GitHub</a></p>
         </div>
       </div>
@@ -236,8 +370,13 @@
     <section class="page-section container reveal" id="certificates">
       <div class="section-head">
         <div>
-          <h2>Certificates & Activities</h2>
-          <p>Learning experiences that strengthened my technical and professional development.</p>
+          <h2 data-en="Certificates & Activities" data-ar="الشهادات والأنشطة">Certificates & Activities</h2>
+          <p
+            data-en="Learning experiences that strengthened my technical and professional development."
+            data-ar="تجارب تعليمية عززت تطوري التقني والمهني."
+          >
+            Learning experiences that strengthened my technical and professional development.
+          </p>
         </div>
       </div>
 
@@ -246,65 +385,183 @@
           <h3>AI Bootcamp</h3>
           <p>American Society of Mechanical Engineers KKU Branch</p>
         </div>
+
         <div class="card">
           <h3>Google Cloud Services</h3>
           <p>Google Developer Group Saudi Arabia</p>
         </div>
+
         <div class="card">
           <h3>Artificial Intelligence in Human Resources</h3>
           <p>Google Developer Group Saudi Arabia</p>
         </div>
+
         <div class="card">
           <h3>AI Bootcamp Attendance</h3>
           <p>Google Developer Group Saudi Arabia</p>
         </div>
+
         <div class="card">
           <h3>Security+</h3>
           <p>Certificate of Attendance by Cyber Guard Club</p>
         </div>
+
         <div class="card">
           <h3>CTF Bootcamp</h3>
           <p>Certificate of Attendance by Cyber Guard Club</p>
         </div>
+
+        <div class="card">
+          <h3>Network Support and Security</h3>
+          <p>Cisco Networking Academy</p>
+        </div>
       </div>
 
-      <p style="margin-top:15px;color:#a9bdd7;">
+      <p
+        class="linkedin-note"
+        data-en="Full certificates are available on my LinkedIn profile."
+        data-ar="جميع الشهادات متاحة بالكامل على حسابي في لينكدإن."
+      >
         Full certificates are available on my LinkedIn profile.
       </p>
 
-      <a href="https://www.linkedin.com/in/engwahj" target="_blank" class="btn btn-secondary">
+      <a href="https://www.linkedin.com/in/engwahj" target="_blank" class="btn btn-secondary" data-en="View Certificates on LinkedIn" data-ar="عرض الشهادات في لينكدإن">
         View Certificates on LinkedIn
       </a>
     </section>
 
-    <section class="page-section container reveal" id="contact">
+    <section class="page-section container reveal" id="learning">
       <div class="section-head">
         <div>
-          <h2>Contact</h2>
-          <p>This section makes it easy for recruiters, companies, and visitors to reach me directly.</p>
+          <h2 data-en="Things I’m Learning" data-ar="أشياء أتعلمها حاليًا">Things I’m Learning</h2>
+          <p
+            data-en="Topics I’m currently focusing on to grow my technical skills."
+            data-ar="المجالات التي أركز عليها حاليًا لتطوير مهاراتي التقنية."
+          >
+            Topics I’m currently focusing on to grow my technical skills.
+          </p>
         </div>
       </div>
 
       <div class="grid grid-2">
         <div class="card">
-          <h3>Email</h3>
+          <h3 data-en="CCNA Preparation" data-ar="الاستعداد لشهادة CCNA">CCNA Preparation</h3>
+          <p
+            data-en="Building stronger networking knowledge in routing, switching, troubleshooting, and network fundamentals."
+            data-ar="أطوّر معرفتي في التوجيه والسويتشنج وحل مشكلات الشبكات والأساسيات."
+          >
+            Building stronger networking knowledge in routing, switching, troubleshooting, and network fundamentals.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 data-en="Cybersecurity Fundamentals" data-ar="أساسيات الأمن السيبراني">Cybersecurity Fundamentals</h3>
+          <p
+            data-en="Improving my understanding of information security, network security, and security tools."
+            data-ar="أعمل على تحسين فهمي لأمن المعلومات وأمن الشبكات وأدوات الحماية."
+          >
+            Improving my understanding of information security, network security, and security tools.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 data-en="Python Automation" data-ar="الأتمتة باستخدام بايثون">Python Automation</h3>
+          <p
+            data-en="Practicing scripting, file handling, and building simple automation tools."
+            data-ar="أتدرّب على كتابة السكربتات ومعالجة الملفات وبناء أدوات أتمتة بسيطة."
+          >
+            Practicing scripting, file handling, and building simple automation tools.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 data-en="Web Development" data-ar="تطوير الويب">Web Development</h3>
+          <p
+            data-en="Improving my front-end skills with HTML, CSS, JavaScript, and better UI structure."
+            data-ar="أطور مهاراتي في الواجهة الأمامية باستخدام HTML وCSS وJavaScript وتصميم واجهات أفضل."
+          >
+            Improving my front-end skills with HTML, CSS, JavaScript, and better UI structure.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section container reveal" id="github-stats">
+      <div class="section-head">
+        <div>
+          <h2 data-en="GitHub Overview" data-ar="نظرة على GitHub">GitHub Overview</h2>
+          <p
+            data-en="A quick look at my GitHub activity and most-used languages."
+            data-ar="نظرة سريعة على نشاطي في GitHub واللغات الأكثر استخدامًا."
+          >
+            A quick look at my GitHub activity and most-used languages.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card github-stat-card">
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=wahjx&show_icons=true&theme=tokyonight"
+            alt="GitHub Stats"
+          />
+        </div>
+
+        <div class="card github-stat-card">
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=wahjx&layout=compact&theme=tokyonight"
+            alt="Top Languages"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section container reveal" id="contact">
+      <div class="section-head">
+        <div>
+          <h2 data-en="Contact" data-ar="التواصل">Contact</h2>
+          <p
+            data-en="This section makes it easy for recruiters, companies, and visitors to reach me directly."
+            data-ar="هذا القسم يسهّل على مسؤولي التوظيف والشركات والزوار التواصل معي مباشرة."
+          >
+            This section makes it easy for recruiters, companies, and visitors to reach me directly.
+          </p>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3 data-en="Email" data-ar="البريد الإلكتروني">Email</h3>
           <p><a href="mailto:wahjyousif@gmail.com">wahjyousif@gmail.com</a></p>
         </div>
+
         <div class="card">
-          <h3>Phone</h3>
+          <h3 data-en="Phone" data-ar="الهاتف">Phone</h3>
           <p><a href="tel:0593906740">0593906740</a></p>
         </div>
+
         <div class="card">
           <h3>LinkedIn</h3>
           <p><a href="https://www.linkedin.com/in/engwahj" target="_blank" rel="noreferrer">www.linkedin.com/in/engwahj</a></p>
         </div>
+
         <div class="card">
           <h3>GitHub</h3>
           <p><a href="https://github.com/wahjx" target="_blank" rel="noreferrer">github.com/wahjx</a></p>
         </div>
+
         <div class="card">
-          <h3>Professional Path</h3>
-          <p>Network Engineering • Cybersecurity • System Analysis • Web Development </p>
+          <h3 data-en="Professional Path" data-ar="المسار المهني">Professional Path</h3>
+          <p data-en="Network Engineering • Cybersecurity • System Analysis • Web Development" data-ar="هندسة الشبكات • الأمن السيبراني • تحليل الأنظمة • تطوير الويب">Network Engineering • Cybersecurity • System Analysis • Web Development</p>
+        </div>
+
+        <div class="card">
+          <h3 data-en="Connect With Me" data-ar="تواصل معي">Connect With Me</h3>
+          <div class="social-icons">
+            <a href="mailto:wahjyousif@gmail.com" aria-label="Email">✉️</a>
+            <a href="https://github.com/wahjx" target="_blank" rel="noreferrer" aria-label="GitHub">💻</a>
+            <a href="https://www.linkedin.com/in/engwahj" target="_blank" rel="noreferrer" aria-label="LinkedIn">🔗</a>
+          </div>
         </div>
       </div>
     </section>
@@ -313,7 +570,7 @@
   <footer class="footer container">
     <div class="footer-box glass">
       <div>© 2026 Wahj Yousif Alzaabe — CV</div>
-      <div><a href="#top">Back to top</a></div>
+      <div><a href="#top" data-en="Back to top" data-ar="العودة للأعلى">Back to top</a></div>
     </div>
   </footer>
 
