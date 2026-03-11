@@ -820,3 +820,16 @@ html[dir="rtl"] .timeline-item::before {
     left: 16px;
   }
 }
+body.light-mode .card:hover,
+body.light-mode .btn:hover,
+body.light-mode .chip:hover,
+body.light-mode .tech-card:hover {
+  background: var(--card);
+}
+
+html[dir="rtl"] .card:hover,
+html[dir="rtl"] .btn:hover,
+html[dir="rtl"] .chip:hover,
+html[dir="rtl"] .tech-card:hover {
+  background: var(--card);
+}
