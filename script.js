@@ -73,7 +73,10 @@ navLinks.forEach((link) => {
 
 document.querySelectorAll(".card, .btn, .chip, .tech-card").forEach((el) => {
   el.addEventListener("mousemove", (e) => {
-    if (document.documentElement.dir === "rtl") return;
+    const isRTL = document.documentElement.dir === "rtl";
+    const isLightMode = document.body.classList.contains("light-mode");
+
+    if (isRTL || isLightMode) return;
 
     const rect = el.getBoundingClientRect();
     const x = e.clientX - rect.left;
@@ -106,6 +109,10 @@ if (themeToggle) {
       localStorage.setItem("theme", "dark");
       themeToggle.textContent = "🌙";
     }
+
+    document.querySelectorAll(".card, .btn, .chip, .tech-card").forEach((el) => {
+      el.style.background = "";
+    });
   });
 }
 
